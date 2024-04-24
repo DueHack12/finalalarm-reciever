@@ -4,7 +4,6 @@ input.onButtonPressed(Button.AB, function () {
     music.stopAllSounds()
     basic.showString("Cleared")
     radio.sendNumber(65)
-    control.reset()
 })
 radio.onReceivedString(function (receivedString) {
     if (receivedString == "ALARM") {
