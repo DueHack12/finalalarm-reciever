@@ -1,8 +1,4 @@
 input.onButtonPressed(Button.AB, function () {
-    led2 = 0
-    basic.clearScreen()
-    music.stopAllSounds()
-    basic.showString("Cleared")
     radio.sendNumber(65)
 })
 radio.onReceivedString(function (receivedString) {
