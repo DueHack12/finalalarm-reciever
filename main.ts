@@ -6,22 +6,6 @@ radio.onReceivedString(function (receivedString) {
         music.play(music.stringPlayable("C5 D C5 D C5 D C5 D ", 120), music.PlaybackMode.LoopingInBackground)
         led2 = 1
         basic.showString(receivedString)
-        while (led2 == 1) {
-            basic.showLeds(`
-                # # # # #
-                # # # # #
-                # # # # #
-                # # # # #
-                # # # # #
-                `)
-            basic.showLeds(`
-                . . . . .
-                . . . . .
-                . . . . .
-                . . . . .
-                . . . . .
-                `)
-        }
     }
     if (receivedString == "Alarm Cleared") {
         led2 = 0
