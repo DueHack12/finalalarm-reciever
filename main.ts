@@ -3,9 +3,9 @@ input.onButtonPressed(Button.AB, function () {
 })
 radio.onReceivedString(function (receivedString) {
     if (receivedString == "ALARM") {
-        basic.showString(receivedString)
         music.play(music.stringPlayable("C5 D C5 D C5 D C5 D ", 120), music.PlaybackMode.LoopingInBackground)
         led2 = 1
+        basic.showString(receivedString)
         while (led2 == 1) {
             basic.showLeds(`
                 # # # # #
