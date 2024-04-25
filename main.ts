@@ -35,5 +35,6 @@ let led2 = 0
 led2 = 0
 radio.setGroup(5)
 radio.setFrequencyBand(37)
+radio.setTransmitPower(7)
 basic.pause(1000)
 basic.showString("RR")
